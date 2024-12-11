@@ -1,13 +1,27 @@
 package conta;
 
 import java.util.Scanner;
-
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
+
+		// INSTANCIAMENTO | CLASE -> OBJETO UTILIZAVEL // TESTE CLASSE CONTA
+
+		Conta c1 = new Conta(1, 123, 1, "Adriana", 10000.0f);
+
+		/*c1.setSaldo(5000f);*/
+		c1.visualizar();
+		c1.sacar(12000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
+		c1.visualizar();
 		
+		
+		System.out.println(" titular: " + c1.getTitular());
+		System.out.println(" Saldo: " + c1.getSaldo());
 
 		Scanner leia = new Scanner(System.in);
 
@@ -50,31 +64,31 @@ public class Menu {
 
 				break;
 			case 2:
-				System.out.println(Cores.TEXT_WHITE +"Listar todas as Contas\n\n");
+				System.out.println(Cores.TEXT_WHITE + "Listar todas as Contas\n\n");
 
 				break;
 			case 3:
-				System.out.println(Cores.TEXT_WHITE +"Consultar dados da Conta - por número\n\n");
+				System.out.println(Cores.TEXT_WHITE + "Consultar dados da Conta - por número\n\n");
 
 				break;
 			case 4:
-				System.out.println(Cores.TEXT_WHITE +"Atualizar dados da Conta\n\n");
+				System.out.println(Cores.TEXT_WHITE + "Atualizar dados da Conta\n\n");
 
 				break;
 			case 5:
-				System.out.println(Cores.TEXT_WHITE +"Apagar a Conta\n\n");
+				System.out.println(Cores.TEXT_WHITE + "Apagar a Conta\n\n");
 
 				break;
 			case 6:
-				System.out.println(Cores.TEXT_WHITE +"Saque\n\n");
+				System.out.println(Cores.TEXT_WHITE + "Saque\n\n");
 
 				break;
 			case 7:
-				System.out.println(Cores.TEXT_WHITE +"Depósito\n\n");
+				System.out.println(Cores.TEXT_WHITE + "Depósito\n\n");
 
 				break;
 			case 8:
-				System.out.println(Cores.TEXT_WHITE +"Transferência entre Contas\n\n");
+				System.out.println(Cores.TEXT_WHITE + "Transferência entre Contas\n\n");
 
 				break;
 			default:
