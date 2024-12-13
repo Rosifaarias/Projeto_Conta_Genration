@@ -1,29 +1,33 @@
 package conta;
 
 import java.util.Scanner;
-import conta.model.Conta;
+
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 import conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
 
-		// INSTANCIAMENTO | CLASE -> OBJETO UTILIZAVEL // TESTE CLASSE CONTA
-
-		Conta c1 = new Conta(1, 123, 1, "Adriana", 10000.0f);
-
-		/*c1.setSaldo(5000f);*/
-		c1.visualizar();
-		c1.sacar(12000.0f);
-		c1.visualizar();
-		c1.depositar(5000.0f);
-		c1.visualizar();
-		
-		
-		System.out.println(" titular: " + c1.getTitular());
-		System.out.println(" Saldo: " + c1.getSaldo());
-
 		Scanner leia = new Scanner(System.in);
+
+		// TESTE PARA VISUALIZAR A CONTA CORRENTE
+		ContaCorrente ContaC = new ContaCorrente(1, 34, 1, "Mariana", 15000.0f, 1000.0f);
+		ContaC.visualizar();
+		ContaC.sacar(12000.0f);
+		ContaC.visualizar();
+		ContaC.depositar(5000.0f);
+		ContaC.visualizar();
+
+		// TESTE PARA VISUALIZAR A CONTA POUPANCA
+		ContaPoupanca ContaP = new ContaPoupanca(3, 123, 2, "Victor", 100000.0f, 15);
+
+		ContaP.visualizar();
+		ContaP.sacar(1000.0f);
+		ContaP.visualizar();
+		ContaP.depositar(5000.0f);
+		ContaP.visualizar();
 
 		int opcao;
 

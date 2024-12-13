@@ -1,6 +1,8 @@
 package conta.model;
 
-public class Conta {
+
+// CLASSE ABSTRATA => BASE PARA CRIAR OUTRAS CLASSES
+public abstract class Conta {
 
 	// **ATRIBUITOS**** SAO "VARIAVEIS"
 
