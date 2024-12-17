@@ -15,8 +15,8 @@ public class Menu {
 
 		while (true) {
 			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
-					+ "*****************************************************");
-			System.out.println("             BANCO GENERATION                    ");
+					+ "*****************************************************"     );
+			System.out.println("           *BANCO GENERATION*                    ");
 			System.out.println("                                                 ");
 			System.out.println("             1- Criar Conta                      ");
 			System.out.println("             2- Listar todas as Contas           ");
